@@ -3,18 +3,30 @@
 # Evaluación Práctica - Ingeniería de Software V
 
 ## Información del Estudiante
-- **Nombre:**
-- **Código:**
-- **Fecha:**
+- **Nombre:** Luis Manuel Rojas Correa
+- **Código:** A0039989
+- **Fecha:** Aug 6 2025
 
 ## Resumen de la Solución
-[Breve descripción de tu implementación]
+A simple docker file was written in order to run a node js app
+that uses express: simple server with an json response.
+
+
 
 ## Dockerfile
-[Explica las decisiones tomadas en la creación del Dockerfile]
+
+In order to correctly use node the image node:18-alpine
+was included (this image has all the dependencies and requirements to
+run any node application). Then the working direction of the app was
+set, as also the json package copied in order to include any config
+information of the app. Then the RUN command was specified, telling that 
+once the docker image is settiing up it will need to run the command npm install, and finally the service was exposed in the port 3000. 
+
 
 ## Script de Automatización
-[Describe cómo funciona tu script y las funcionalidades implementadas]
+
+
+
 
 ## Principios DevOps Aplicados
 1. [Principio 1]
