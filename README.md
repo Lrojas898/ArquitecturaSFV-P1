@@ -25,7 +25,9 @@ once the docker image is settiing up it will need to run the command npm install
 
 ## Script de Automatización
 
+A simple bash script was written to automate the deployment process. The script verifies that docker is installed and running, then automatically builds the image and runs the container with NODE_ENV=production mapping port 8080 externally to port 3000 internally. 
 
+It tests connectivity using curl in a loop up to 10 attempts and provides a status report showing success or error with container logs.
 
 
 ## Principios DevOps Aplicados
@@ -40,4 +42,16 @@ once the docker image is settiing up it will need to run the command npm install
 [Describe al menos 3 mejoras que podrían implementarse en el futuro]
 
 ## Instrucciones para Ejecutar
-[Instrucciones paso a paso para ejecutar tu solución]
+
+Clone or download this repository to your local machine
+
+Navigate to the project directory: cd ArquitecturaSFV-P1
+
+Make the script executable: chmod +x deploy.sh
+
+Run the deployment script: ./deploy.sh
+
+The script will automatically build the image, run the container, and test connectivity
+
+Once successful, access the application at: http://localhost:8080
+To stop the container: sudo docker stop devops-app
