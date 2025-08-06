@@ -31,9 +31,12 @@ It tests connectivity using curl in a loop up to 10 attempts and provides a stat
 
 
 ## Principios DevOps Aplicados
-1. [Principio 1]
-2. [Principio 2]
-3. [Principio 3]
+
+Automation: The bash script automates the entire deployment process from image building to container execution and testing, eliminating manual steps and reducing human error.
+
+Infrastructure as Code: The Dockerfile defines the application environment and dependencies in a declarative way, making the infrastructure reproducible and versionable.
+
+Environment Consistency: Containerization with Docker ensures the application runs identically across different environments (development, staging, production) regardless of the host system.
 
 ## Captura de Pantalla
 [Incluye al menos una captura de pantalla que muestre tu aplicación funcionando en el contenedor]
